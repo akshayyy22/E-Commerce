@@ -2437,17 +2437,7 @@
       "id": "a1e5",
       "email": "demo@gmail.com",
       "password": "Akshay@123",
-      "addresses": [
-        {
-          "name": "akshayy",
-          "email": "demo@gmail.com",
-          "phone": "715365263353",
-          "street": "pratiksha nagar sion east",
-          "city": "mumbai",
-          "state": "maharashtra",
-          "pinCode": "400277"
-        }
-      ]
+      "addresses": []
     }
   ],
   "cart": [],
@@ -2581,6 +2571,91 @@
         "pinCode": "400277"
       },
       "status": "pending"
+    },
+    {
+      "id": "5ccf",
+      "items": [
+        {
+          "id": "7826",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "a1e5"
+        },
+        {
+          "id": "2db0",
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/10/1.jpg",
+            "https://cdn.dummyjson.com/product-images/10/2.jpg",
+            "https://cdn.dummyjson.com/product-images/10/3.jpg",
+            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+          ],
+          "quantity": 1,
+          "user": "a1e5"
+        }
+      ],
+      "totalAmount": 2198,
+      "totalItems": 2,
+      "user": {
+        "id": "a1e5",
+        "email": "demo@gmail.com",
+        "password": "Akshay@123",
+        "addresses": [
+          {
+            "name": "akshayy",
+            "email": "demo@gmail.com",
+            "phone": "715365263353",
+            "street": "pratiksha nagar sion east",
+            "city": "mumbai",
+            "state": "maharashtra",
+            "pinCode": "400277"
+          },
+          {
+            "name": "amritgaii",
+            "email": "akshayyy@gmail.com",
+            "phone": "983833637",
+            "street": "new york",
+            "city": "usa",
+            "state": "nyc",
+            "pinCode": "600177"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "amritgaii",
+        "email": "akshayyy@gmail.com",
+        "phone": "983833637",
+        "street": "new york",
+        "city": "usa",
+        "state": "nyc",
+        "pinCode": "600177"
+      },
+      "status": "pending"
     }
-  ]
+  ],
+  "user": []
 }
