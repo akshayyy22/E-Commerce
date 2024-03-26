@@ -2440,7 +2440,9 @@
       "addresses": []
     }
   ],
-  "cart": [],
+  "cart": [
+
+  ],
   "orders": [
     {
       "id": "82af",
@@ -2656,6 +2658,5 @@
       },
       "status": "pending"
     }
-  ],
-  "user": []
+  ]
 }
