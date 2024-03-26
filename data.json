@@ -2437,45 +2437,59 @@
       "id": "a1e5",
       "email": "demo@gmail.com",
       "password": "Akshay@123",
-      "addresses": []
+      "addresses": [
+        {
+          "name": "akshayy",
+          "email": "demo@gmail.com",
+          "phone": "715365263353",
+          "street": "pratiksha nagar sion east",
+          "city": "mumbai",
+          "state": "maharashtra",
+          "pinCode": "400277"
+        }
+      ]
     }
   ],
   "cart": [
     {
-      "id": "3",
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
+      "id": "6530",
+      "title": "iPhone 9",
+      "description": "An apple mobile which is nothing like apple",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
       "images": [
-        "https://cdn.dummyjson.com/product-images/3/1.jpg"
+        "https://cdn.dummyjson.com/product-images/1/1.jpg",
+        "https://cdn.dummyjson.com/product-images/1/2.jpg",
+        "https://cdn.dummyjson.com/product-images/1/3.jpg",
+        "https://cdn.dummyjson.com/product-images/1/4.jpg",
+        "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
       ],
       "quantity": 1,
       "user": "a1e5"
     },
     {
-      "id": "6",
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
+      "id": "bd21",
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
       "brand": "Apple",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+      "category": "smartphones",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
       "images": [
-        "https://cdn.dummyjson.com/product-images/6/1.png",
-        "https://cdn.dummyjson.com/product-images/6/2.jpg",
-        "https://cdn.dummyjson.com/product-images/6/3.png",
-        "https://cdn.dummyjson.com/product-images/6/4.jpg"
+        "https://cdn.dummyjson.com/product-images/2/1.jpg",
+        "https://cdn.dummyjson.com/product-images/2/2.jpg",
+        "https://cdn.dummyjson.com/product-images/2/3.jpg",
+        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
       ],
-      "quantity": 3,
+      "quantity": 1,
       "user": "a1e5"
     }
   ]
