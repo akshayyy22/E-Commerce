@@ -4,8 +4,8 @@
       "id": "1",
       "title": "iPhone 9",
       "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
+      "price": 553,
+      "discountPercentage": 0,
       "rating": 4.69,
       "stock": 94,
       "brand": "Apple",
@@ -2459,7 +2459,7 @@
   ],
   "cart": [
     {
-      "id": "514d",
+      "id": "495a",
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
       "price": 1249,
@@ -2472,6 +2472,7 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/3/1.jpg"
       ],
+      "productId": "3",
       "quantity": 1,
       "user": "a1e5"
     }
