@@ -10,7 +10,7 @@ import { selectCurrentOrder } from "../features/order/orderSlice";
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe("pk_test_51OzxbzSEhHm5CtggRoy3z1izL3gVzm0MGXUFegcDCio7ZGOln2f9V2muX5zfNenQGMwW4LggTt3XiBfecOEPjfrH00wv0ruv7S");
+const stripePromise = loadStripe("pk_test_51N5NLVSF2Mo4AGVvYGMMNnTcPA5lHrkUv8zPymsKfL31c8m6et8525Y92zMgA22m1u6ZkkXsBofre0PJL6i3eVsh00sR6M8c00");
 
 export default function StripeCheckout() {
   const [clientSecret, setClientSecret] = useState("");
@@ -18,15 +18,11 @@ export default function StripeCheckout() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("http://localhost:8080/create-payment-intent", {
+    fetch("/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ totalAmount: currentOrder.totalAmount }),
-      meta:{
-        order_id: currentOrder.id 
-        // this info will go to stripe => and then to our webhook
-        // so we can conclude that payment was successful, even if client closes window after pay
-      }
+      body: JSON.stringify({ totalAmount: currentOrder.totalAmount, orderId:currentOrder.id }),
+    
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
