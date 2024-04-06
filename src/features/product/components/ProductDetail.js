@@ -10,22 +10,14 @@ import {
 import { useParams } from 'react-router-dom';
 import { addToCartAsync, selectItems } from '../../cart/cartSlice';
 import { selectLoggedInUser } from '../../auth/authSlice';
-import { discountedPrice } from '../../../app/constants';
 import { useAlert } from 'react-alert';
 import { Grid } from 'react-loader-spinner';
 
-const highlights = [
-  'Hand cut and sewn locally',
-  'Dyed with our proprietary colors',
-  'Pre-washed & pre-shrunk',
-  'Ultra-soft 100% cotton',
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-// TODO : Loading UI
 
 export default function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState();
@@ -51,9 +43,7 @@ export default function ProductDetail() {
       if (selectedSize) {
         newItem.size = selectedSize;
       }
-      dispatch(addToCartAsync(newItem));
-      // TODO: it will be based on server response of backend
-      alert.success('Item added to Cart');
+      dispatch(addToCartAsync({item:newItem, alert}));
     } else {
       alert.error('Item Already added');
     }
@@ -165,7 +155,7 @@ export default function ProductDetail() {
                 ${product.price}
               </p>
               <p className="text-3xl tracking-tight text-gray-900">
-                ${discountedPrice(product)}
+                ${product.discountPrice}
               </p>
 
               {/* Reviews */}
@@ -323,7 +313,7 @@ export default function ProductDetail() {
                 <button
                   onClick={handleCart}
                   type="submit"
-                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-teal-700 px-8 py-3 text-base font-medium text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
                 >
                   Add to Cart
                 </button>

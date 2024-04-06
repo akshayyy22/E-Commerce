@@ -9,7 +9,6 @@ import {
 } from './cartSlice';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import { discountedPrice } from '../../app/constants';
 import { Grid } from 'react-loader-spinner';
 import Modal from '../common/Modal';
 
@@ -22,7 +21,7 @@ export default function Cart() {
   const [openModal, setOpenModal] = useState(null);
 
   const totalAmount = items.reduce(
-    (amount, item) => discountedPrice(item.product) * item.quantity + amount,
+    (amount, item) => item.product.discountPrice * item.quantity + amount,
     0
   );
   const totalItems = items.reduce((total, item) => item.quantity + total, 0);
@@ -75,7 +74,7 @@ export default function Cart() {
                           <h3>
                             <a href={item.product.id}>{item.product.title}</a>
                           </h3>
-                          <p className="ml-4">${discountedPrice(item.product)}</p>
+                          <p className="ml-4">${item.product.discountPrice}</p>
                         </div>
                         <p className="mt-1 text-sm text-gray-500">
                           {item.product.brand}
@@ -114,7 +113,7 @@ export default function Cart() {
                           <button
                             onClick={e=>{setOpenModal(item.id)}}
                             type="button"
-                            className="font-medium text-indigo-600 hover:text-indigo-500"
+                            className="font-medium text-teal-700 hover:text-teal-600"
                           >
                             Remove
                           </button>
@@ -142,7 +141,7 @@ export default function Cart() {
             <div className="mt-6">
               <Link
                 to="/checkout"
-                className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="flex items-center justify-center rounded-md border border-transparent bg-teal-700 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600"
               >
                 Checkout
               </Link>
@@ -153,7 +152,7 @@ export default function Cart() {
                 <Link to="/">
                   <button
                     type="button"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                    className="font-medium text-teal-700 hover:text-teal-600"
                   >
                     Continue Shopping
                     <span aria-hidden="true"> &rarr;</span>
